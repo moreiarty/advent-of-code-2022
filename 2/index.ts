@@ -7,8 +7,8 @@ export const solution = async () => {
     const rounds = file.split("\n");
 
 
-    console.log("Part 1 | Total Score: %s", partOneScore(rounds as Round[]));
-    console.log("Part 2 | Total Score: %s", partTwoScore(rounds as Round[]));
+    console.log("Part 1 | Total Score: %d", partOneScore(rounds as Round[]));
+    console.log("Part 2 | Total Score: %d", partTwoScore(rounds as Round[]));
 };
 
 const partOneScore = (rounds: Round[]): number => {

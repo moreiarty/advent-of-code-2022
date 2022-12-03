@@ -5,8 +5,8 @@ export const solution = async () => {
     writeSolutionSeparatorToConsole(1);
     const file = await getFile(__dirname, "calorie-count.txt");
 
-    console.log("Top Elf's Calories: %s", topElf(file));
-    console.log("Top 3 Elves' Calories: %o", topThreeElves(file));
+    console.log("Top Elf's Calories: %d", topElf(file));
+    console.log("Top 3 Elves' Calories: %d", topThreeElves(file));
 };
 
 const topElf = (input: string) => {
