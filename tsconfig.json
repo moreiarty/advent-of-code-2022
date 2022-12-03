@@ -1,0 +1,55 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+
+	"compilerOptions": {
+		/* useful to re-enable if compiling to js */
+		"incremental": false,
+
+		/* set up */
+		"baseUrl": "./",
+		"outDir": "./dist",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"module": "CommonJS",
+		"target": "ES2022",
+		"lib": ["ES2022"],
+
+		/* emit */
+		"declaration": false,
+		"emitDecoratorMetadata": true,
+		"importHelpers": true,
+		"importsNotUsedAsValues": "error",
+		"noEmitHelpers": true,
+		"noEmitOnError": true,
+
+		/* JS support */
+		"allowJs": false,
+		"checkJs": false,
+
+		/* interop constraints */
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+
+		/* language & environment */
+		"experimentalDecorators": true,
+
+		/* completeness */
+		"skipLibCheck": true,
+
+		/* typechecking */
+		"strict": true,
+		"exactOptionalPropertyTypes": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+
+		/* global types to be included */
+		"types": ["node"]
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
