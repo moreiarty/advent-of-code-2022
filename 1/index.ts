@@ -1,10 +1,9 @@
-import { readFile } from "fs/promises";
-import { join } from "path";
+import { writeSolutionSeparatorToConsole } from "../utils/console";
+import { getFile } from "../utils/file";
 
 export const solution = async () => {
-    const file = await readFile(join(__dirname, "calorie-count.txt"), {
-        encoding: "utf-8",
-    });
+    writeSolutionSeparatorToConsole(1);
+    const file = await getFile(__dirname, "calorie-count.txt");
 
     console.log("Top Elf's Calories: %s", topElf(file));
     console.log("Top 3 Elves' Calories: %o", topThreeElves(file));

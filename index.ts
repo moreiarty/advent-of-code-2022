@@ -1,3 +1,9 @@
-import { solution } from "./1";
+import { writeEndSeparator } from "./utils/console";
+import { solution as dayOneSolution } from "./1";
+import { solution as dayTwoSolution } from "./2";
 
-solution();
+(async () => {
+    await dayOneSolution();
+    await dayTwoSolution();
+    writeEndSeparator(); 
+})();
